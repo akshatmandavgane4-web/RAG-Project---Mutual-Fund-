@@ -1,0 +1,44 @@
+name: Daily Ingestion Scheduler
+
+on:
+  schedule:
+    # Run daily at 10:00 AM IST (which is 04:30 AM UTC)
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+    # Enable manual triggering from the GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Ingestion Pipeline
+        run: |
+          python ingestion/run.py
+
+      - name: Run Tests
+        run: |
+          pytest tests/
+
+      - name: Commit and Push Database Updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated daily ingestion update [skip ci]"
+          file_pattern: 'data/processed/*.json data/index/*'
