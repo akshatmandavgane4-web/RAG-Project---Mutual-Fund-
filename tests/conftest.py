@@ -2,11 +2,10 @@ import sys
 from pathlib import Path
 import pytest
 
-# Ensure src/ is on path when running pytest from project root
+# Ensure project root is on path when running pytest
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "src"
-if str(SRC) not in sys.path:
-    sys.path.insert(0, str(SRC))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 @pytest.fixture
 def project_root() -> Path:
