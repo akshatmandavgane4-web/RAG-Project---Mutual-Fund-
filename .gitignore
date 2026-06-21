@@ -11,12 +11,13 @@ __pycache__/
 .dist/
 build/
 
-# Data artifacts
+# Data artifacts (only raw files are ignored; processed JSON and vector index are tracked)
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
-data/index/
+!data/processed/*.json
+!data/index/
 
 # IDE / OS
 .idea/

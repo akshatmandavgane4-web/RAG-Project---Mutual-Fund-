@@ -1,0 +1,112 @@
+{
+  "last_indexed_at": "2026-06-21",
+  "collection_name": "hdfc_faq_collection",
+  "model_name": "BAAI/bge-small-en-v1.5",
+  "schemes": {
+    "hdfc-mid-cap-fund-direct-growth": {
+      "id": "hdfc-mid-cap-fund-direct-growth",
+      "name": "HDFC Mid Cap Fund Direct Growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "expense_ratio": "0.76%",
+      "exit_load": "1% if redeemed within 1 year",
+      "min_sip": 100.0,
+      "riskometer_class": "Very High",
+      "benchmark_index": "NIFTY Midcap 150 Total Return Index",
+      "fund_managers": [
+        {
+          "name": "N/A",
+          "tenure": "N/A",
+          "background": "N/A"
+        }
+      ],
+      "nav": "\u20b9226.50",
+      "aum": "\u20b997,350.48Cr",
+      "category": "Equity \u2014 Mid Cap",
+      "last_updated": "2026-06-21"
+    },
+    "hdfc-large-cap-fund-direct-growth": {
+      "id": "hdfc-large-cap-fund-direct-growth",
+      "name": "HDFC Large Cap Fund Direct Growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "expense_ratio": "1.04%",
+      "exit_load": "1% if redeemed within 1 year",
+      "min_sip": 100.0,
+      "riskometer_class": "Very High",
+      "benchmark_index": "NIFTY 100 Total Return Index",
+      "fund_managers": [
+        {
+          "name": "N/A",
+          "tenure": "N/A",
+          "background": "N/A"
+        }
+      ],
+      "nav": "\u20b91,210.15",
+      "aum": "\u20b937,808.31Cr",
+      "category": "Equity \u2014 Large Cap",
+      "last_updated": "2026-06-21"
+    },
+    "hdfc-small-cap-fund-direct-growth": {
+      "id": "hdfc-small-cap-fund-direct-growth",
+      "name": "HDFC Small Cap Fund Direct Growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+      "expense_ratio": "0.77%",
+      "exit_load": "1% if redeemed within 1 year",
+      "min_sip": 100.0,
+      "riskometer_class": "Very High",
+      "benchmark_index": "BSE 250 SmallCap Total Return Index",
+      "fund_managers": [
+        {
+          "name": "N/A",
+          "tenure": "N/A",
+          "background": "N/A"
+        }
+      ],
+      "nav": "\u20b9158.56",
+      "aum": "\u20b938,809.48Cr",
+      "category": "Equity \u2014 Small Cap",
+      "last_updated": "2026-06-21"
+    },
+    "hdfc-gold-etf-fund-of-fund-direct-plan-growth": {
+      "id": "hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+      "name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+      "expense_ratio": "0.20%",
+      "exit_load": "1%, if redeemed within 15 days",
+      "min_sip": 100.0,
+      "riskometer_class": "High",
+      "benchmark_index": "Domestic Price of Gold",
+      "fund_managers": [
+        {
+          "name": "N/A",
+          "tenure": "N/A",
+          "background": "N/A"
+        }
+      ],
+      "nav": "\u20b945.19",
+      "aum": "\u20b912,121.18Cr",
+      "category": "Other \u2014 Gold ETF FoF",
+      "last_updated": "2026-06-21"
+    },
+    "hdfc-defence-fund-direct-growth": {
+      "id": "hdfc-defence-fund-direct-growth",
+      "name": "HDFC Defence Fund Direct Growth",
+      "source_url": "https://groww.in/mutual-funds/hdfc-defence-fund-direct-growth",
+      "expense_ratio": "0.88%",
+      "exit_load": "1%, if redeemed within 1 year",
+      "min_sip": 100.0,
+      "riskometer_class": "Very High",
+      "benchmark_index": "Nifty India Defence Total Return Index",
+      "fund_managers": [
+        {
+          "name": "N/A",
+          "tenure": "N/A",
+          "background": "N/A"
+        }
+      ],
+      "nav": "\u20b930.47",
+      "aum": "\u20b99,724.27Cr",
+      "category": "Equity \u2014 Sectoral/Thematic (Defence)",
+      "last_updated": "2026-06-21"
+    }
+  }
+}
