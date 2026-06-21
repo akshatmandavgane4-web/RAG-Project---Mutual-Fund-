@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>HDFC Fund Facts Q&A - Premium Retrieval Engine</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#2f3732",
+                    "primary-fixed": "#59fdc5",
+                    "on-secondary": "#2d3037",
+                    "surface-bright": "#333b37",
+                    "surface": "#0d1511",
+                    "on-tertiary-fixed": "#291800",
+                    "tertiary-fixed-dim": "#ffba4b",
+                    "on-secondary-fixed": "#191c22",
+                    "secondary-container": "#44474e",
+                    "primary-fixed-dim": "#2fe0aa",
+                    "surface-tint": "#2fe0aa",
+                    "on-tertiary-container": "#644100",
+                    "on-primary-container": "#00533c",
+                    "on-tertiary": "#442b00",
+                    "surface-container-highest": "#2f3732",
+                    "tertiary-container": "#f5a814",
+                    "primary": "#00D09C",
+                    "secondary-fixed": "#e1e2eb",
+                    "surface-dim": "#0d1511",
+                    "secondary-fixed-dim": "#c4c6ce",
+                    "error-container": "#93000a",
+                    "tertiary": "#ffca7e",
+                    "on-surface-variant": "#bacac1",
+                    "on-primary-fixed": "#002116",
+                    "error": "#ffb4ab",
+                    "surface-container-high": "#242c28",
+                    "on-error": "#690005",
+                    "on-secondary-fixed-variant": "#44474e",
+                    "surface-container-low": "#161d19",
+                    "on-tertiary-fixed-variant": "#624000",
+                    "on-secondary-container": "#b3b5bd",
+                    "on-error-container": "#ffdad6",
+                    "background": "#0d1511",
+                    "on-background": "#dce5de",
+                    "inverse-primary": "#006c4f",
+                    "outline": "#85948c",
+                    "primary-container": "#00d09c",
+                    "secondary": "#c4c6ce",
+                    "inverse-on-surface": "#2a322e",
+                    "on-primary": "#003828",
+                    "outline-variant": "#3c4a43",
+                    "inverse-surface": "#dce5de",
+                    "on-surface": "#dce5de",
+                    "surface-container": "#1a211d",
+                    "on-primary-fixed-variant": "#00513b",
+                    "tertiary-fixed": "#ffddb1",
+                    "surface-container-lowest": "#08100c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "1rem",
+                    "container-max": "1440px",
+                    "margin-desktop": "2.5rem",
+                    "stack-sm": "0.5rem",
+                    "gutter": "1.5rem",
+                    "stack-lg": "2.5rem",
+                    "stack-md": "1.25rem"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Outfit"],
+                    "label-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Outfit"],
+                    "headline-lg": ["Outfit"],
+                    "body-md": ["Inter"],
+                    "body-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "14px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        body {
+            background: radial-gradient(circle at center, #121418 0%, #0B0D10 100%);
+            color: #dce5de;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .glass-card:hover {
+            border-color: rgba(0, 208, 156, 0.2);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(to bottom right, #44edb7 0%, #ffffff 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulsing-green-soft {
+            animation: pulse-soft 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 0.8; transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 208, 156, 0.4); }
+            50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 10px 2px rgba(0, 208, 156, 0.2); }
+        }
+        .skeleton-pulse-refined {
+            background: linear-gradient(90deg, rgba(26, 33, 29, 0.4) 25%, rgba(36, 44, 40, 0.6) 50%, rgba(26, 33, 29, 0.4) 75%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 2s ease-in-out infinite;
+        }
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        .inner-shadow-dock {
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 10px 40px -10px rgba(0,0,0,0.5);
+        }
+        .send-button-glow {
+            box-shadow: 0 0 15px rgba(0, 208, 156, 0.3);
+        }
+        .send-button-glow:hover {
+            box-shadow: 0 0 25px rgba(0, 208, 156, 0.5);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- Compliance Banner -->
+<div class="sticky top-0 z-[60] w-full bg-surface-container-highest/60 backdrop-blur-xl border-b border-white/5 px-margin-mobile py-2.5">
+    <div class="max-w-[900px] mx-auto flex items-center gap-3">
+        <span class="material-symbols-outlined text-tertiary-container/80 text-[20px]">shield</span>
+        <p class="font-label-sm text-label-sm text-tertiary/90 tracking-wide">
+            Educational Purpose Only: Non-advisory facts retrieval engine. Information does not constitute financial advice.
+        </p>
+    </div>
+</div>
+<main class="max-w-[900px] mx-auto px-margin-mobile pb-40">
+    <!-- Header Section -->
+    <header class="py-stack-lg mt-12 text-center space-y-4">
+        <h1 class="font-headline-lg text-headline-lg text-gradient tracking-tight px-4">HDFC Fund Facts Q&amp;A</h1>
+        <p class="font-body-md text-body-lg text-on-surface-variant/80 tracking-wide">Official Facts-Only Retrieval Engine</p>
+        <div class="flex items-center justify-center gap-6 pt-2">
+            <div class="flex items-center gap-2.5 px-4 py-1.5 bg-white/5 rounded-full border border-white/10">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary pulsing-green-soft"></span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-[10px]">ChromaDB Index: Active</span>
+            </div>
+            <div class="flex items-center gap-2.5 px-4 py-1.5 bg-white/5 rounded-full border border-white/10">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-[10px]" id="api-status">Liveness: Online</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Suggestions Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-stack-lg" id="suggestions-grid">
+        <button onclick="sendSuggestion('What is the expense ratio of HDFC Mid Cap Fund?')" class="glass-card p-stack-md rounded-2xl text-left transition-all duration-300 hover:translate-y-[-4px] group">
+            <p class="font-label-md text-label-md text-on-surface/90 group-hover:text-primary transition-colors">What is the expense ratio of HDFC Mid Cap?</p>
+            <div class="flex items-center gap-1 mt-3">
+                <span class="font-label-sm text-label-sm text-primary/80">Ask Retrieval</span>
+                <span class="material-symbols-outlined text-[14px] text-primary/80 opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+            </div>
+        </button>
+        <button onclick="sendSuggestion('Who is the fund manager of HDFC Defence Fund?')" class="glass-card p-stack-md rounded-2xl text-left transition-all duration-300 hover:translate-y-[-4px] group">
+            <p class="font-label-md text-label-md text-on-surface/90 group-hover:text-primary transition-colors">Who is the fund manager of HDFC Defence?</p>
+            <div class="flex items-center gap-1 mt-3">
+                <span class="font-label-sm text-label-sm text-primary/80">Ask Retrieval</span>
+                <span class="material-symbols-outlined text-[14px] text-primary/80 opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+            </div>
+        </button>
+        <button onclick="sendSuggestion('Should I invest in HDFC Large Cap Fund?')" class="glass-card p-stack-md rounded-2xl text-left transition-all duration-300 hover:translate-y-[-4px] group">
+            <p class="font-label-md text-label-md text-on-surface/90 group-hover:text-primary transition-colors">Should I invest in HDFC Large Cap?</p>
+            <div class="flex items-center gap-1 mt-3">
+                <span class="font-label-sm text-label-sm text-primary/80">Ask Advice</span>
+                <span class="material-symbols-outlined text-[14px] text-primary/80 opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+            </div>
+        </button>
+    </section>
+
+    <!-- Chat Feed -->
+    <section class="mt-16 space-y-stack-lg" id="chat-feed">
+        <!-- Welcoming greeting -->
+        <div class="flex flex-col items-start w-full">
+            <div class="glass-card p-stack-lg rounded-[28px] rounded-tl-none w-full">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+                        <span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+                    </div>
+                    <span class="font-label-md text-label-md text-primary tracking-widest uppercase text-[11px]">HDFC Assistant</span>
+                </div>
+                <p class="font-body-md text-on-surface/90 leading-relaxed mb-3">
+                    Hello! I am your facts-only HDFC Mutual Fund Q&A assistant.
+                </p>
+                <p class="font-body-md text-on-surface/90 leading-relaxed">
+                    I can help you retrieve verified details regarding exit loads, expense ratios, minimum investments, riskometer ratings, and fund managers for our five target HDFC schemes. I do not provide any advisory recommendations or performance predictions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thinking State (Loader) -->
+    <section class="mt-8 space-y-stack-lg hidden" id="thinking-state">
+        <div class="flex flex-col items-start w-full">
+            <div class="flex items-center gap-3 mb-4 px-2">
+                <span class="material-symbols-outlined text-primary/60 animate-spin text-[18px]">progress_activity</span>
+                <span class="font-label-md text-label-md text-on-surface-variant/80 tracking-wide">Scanning ChromaDB & Generating...</span>
+            </div>
+            <div class="w-full glass-card p-8 rounded-[28px] space-y-4">
+                <div class="h-3 w-3/4 skeleton-pulse-refined rounded-full"></div>
+                <div class="h-3 w-1/2 skeleton-pulse-refined rounded-full"></div>
+                <div class="h-3 w-2/3 skeleton-pulse-refined rounded-full"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Floating Dock Input -->
+<div class="fixed bottom-10 left-1/2 -translate-x-1/2 w-full max-w-[860px] px-margin-mobile z-50">
+    <div class="bg-[#121418]/90 backdrop-blur-3xl rounded-[40px] border border-white/10 p-2 inner-shadow-dock flex items-center gap-3 transition-all duration-500 hover:border-primary/30 group" id="input-container">
+        <div class="pl-5 flex items-center text-on-surface-variant/60 group-focus-within:text-primary transition-colors">
+            <span class="material-symbols-outlined">search</span>
+        </div>
+        <input id="chat-input" class="bg-transparent border-none focus:ring-0 w-full text-on-surface placeholder-on-surface-variant/40 font-body-md py-4" placeholder="Ask about fund metrics, history, or managers..." type="text"/>
+        <button id="send-btn" onclick="submitMessage()" class="bg-primary text-on-primary p-4 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-90 send-button-glow">
+            <span class="material-symbols-outlined font-bold">send</span>
+        </button>
+    </div>
+    <div class="flex justify-center mt-5">
+        <div class="flex items-center gap-2.5 px-4 py-1.5 bg-black/40 rounded-full border border-white/5 backdrop-blur-md">
+            <span class="material-symbols-outlined text-[14px] text-primary/80">lock</span>
+            <span class="font-label-sm text-[10px] text-on-surface-variant/60 uppercase tracking-[0.15em]">PII Sandboxing Active</span>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w-full px-margin-desktop py-16 flex flex-col items-center gap-6 text-center border-t border-white/5 mt-20 mb-32">
+    <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-[18px]">finance</span>
+        </div>
+        <span class="font-headline-md text-[18px] text-on-surface font-semibold tracking-tight">HDFC Mutual Fund FAQ Assistant</span>
+    </div>
+    <p class="font-body-sm text-body-sm text-on-surface-variant/70 max-w-2xl px-6 leading-relaxed">
+        Mutual Fund investments are subject to market risks. Read all scheme related documents carefully before making any financial commitment.
+    </p>
+    <div class="flex items-center gap-6 mt-4">
+        <a class="text-on-surface-variant/60 hover:text-primary font-label-sm transition-colors tracking-wide text-[11px] uppercase" href="#">Privacy Policy</a>
+        <span class="w-1 h-1 rounded-full bg-white/10"></span>
+        <a class="text-on-surface-variant/60 hover:text-primary font-label-sm transition-colors tracking-wide text-[11px] uppercase" href="#">SEBI Compliance</a>
+        <span class="w-1 h-1 rounded-full bg-white/10"></span>
+        <a class="text-on-surface-variant/60 hover:text-primary font-label-sm transition-colors tracking-wide text-[11px] uppercase" href="#">Contact Support</a>
+    </div>
+</footer>
+
+<script>
+    const inputContainer = document.getElementById('input-container');
+    const inputField = document.getElementById('chat-input');
+    const chatFeed = document.getElementById('chat-feed');
+    const thinkingState = document.getElementById('thinking-state');
+    const apiStatus = document.getElementById('api-status');
+
+    // Focus glow effects
+    inputField.addEventListener('focus', () => {
+        inputContainer.classList.add('border-primary/50');
+        inputContainer.style.boxShadow = 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 208, 156, 0.15)';
+    });
+
+    inputField.addEventListener('blur', () => {
+        inputContainer.classList.remove('border-primary/50');
+        inputContainer.style.boxShadow = '';
+    });
+
+    // Enter key submission
+    inputField.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            submitMessage();
+        }
+    });
+
+    // Check liveness at startup
+    async function checkLiveness() {
+        try {
+            const res = await fetch('/health');
+            if (res.ok) {
+                const data = await res.json();
+                if (data.database_loaded) {
+                    apiStatus.textContent = "Liveness: Online";
+                    apiStatus.className = "font-label-sm text-label-sm text-primary uppercase tracking-widest text-[10px]";
+                } else {
+                    apiStatus.textContent = "Liveness: DB Loading";
+                    apiStatus.className = "font-label-sm text-label-sm text-tertiary-container uppercase tracking-widest text-[10px]";
+                }
+            } else {
+                apiStatus.textContent = "Liveness: Error";
+                apiStatus.className = "font-label-sm text-label-sm text-error uppercase tracking-widest text-[10px]";
+            }
+        } catch (e) {
+            apiStatus.textContent = "Liveness: Offline";
+            apiStatus.className = "font-label-sm text-label-sm text-error uppercase tracking-widest text-[10px]";
+        }
+    }
+    checkLiveness();
+
+    function escapeHtml(text) {
+        if (!text) return "";
+        return text
+            .toString()
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
+    function sendSuggestion(text) {
+        inputField.value = text;
+        submitMessage();
+    }
+
+    async function submitMessage() {
+        const query = inputField.value.trim();
+        if (!query) return;
+
+        // Clear input field
+        inputField.value = "";
+
+        // 1. Append User Message
+        const userMsgHtml = `
+        <div class="flex flex-col items-end w-full animate-in fade-in slide-in-from-right-4 duration-500">
+            <div class="bg-surface-container-high/80 px-6 py-3.5 rounded-[24px] rounded-tr-none max-w-[85%] border border-white/5">
+                <p class="text-on-surface font-body-md leading-relaxed">${escapeHtml(query)}</p>
+            </div>
+        </div>`;
+        chatFeed.insertAdjacentHTML('beforeend', userMsgHtml);
+        chatFeed.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+        // 2. Show Loader
+        thinkingState.classList.remove('hidden');
+        thinkingState.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+        try {
+            // 3. Post to API
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: query })
+            });
+
+            if (!response.ok) {
+                throw new Error("HTTP error " + response.status);
+            }
+
+            const data = await response.json();
+
+            // 4. Hide Loader
+            thinkingState.classList.add('hidden');
+
+            // 5. Append Assistant Response
+            let botMsgHtml = '';
+            if (data.is_refusal) {
+                // Advisory Refusal Card layout
+                botMsgHtml = `
+                <div class="flex flex-col items-start w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
+                    <div class="w-full glass-card border-tertiary-container/20 p-stack-lg rounded-[28px] relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1.5 h-full bg-tertiary/40"></div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-tertiary-container">policy</span>
+                            <h4 class="font-headline-md text-[20px] text-tertiary/90">Advisory Restriction</h4>
+                        </div>
+                        <p class="font-body-md text-on-surface/80 mb-8 leading-relaxed">
+                            ${escapeHtml(data.answer)}
+                        </p>
+                        <a class="inline-flex items-center gap-2.5 bg-primary text-on-primary-container px-8 py-3 rounded-full font-label-md transition-all duration-300 hover:shadow-[0_0_25px_rgba(0,208,156,0.4)] hover:scale-[1.02] active:scale-95" href="${escapeHtml(data.citation_url)}" target="_blank">
+                            Investor Center Center
+                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                        </a>
+                    </div>
+                </div>`;
+            } else {
+                // Compliant RAG answer card
+                botMsgHtml = `
+                <div class="flex flex-col items-start w-full animate-in fade-in slide-in-from-left-4 duration-500">
+                    <div class="glass-card p-stack-lg rounded-[28px] rounded-tl-none w-full">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+                                    <span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+                                </div>
+                                <span class="font-label-md text-label-md text-primary tracking-widest uppercase text-[11px]">HDFC Assistant</span>
+                            </div>
+                            <a href="${escapeHtml(data.citation_url)}" target="_blank" class="px-3 py-1 bg-primary/5 text-primary rounded-full font-label-sm text-label-sm border border-primary/20 backdrop-blur-sm hover:bg-primary/10 transition-colors flex items-center gap-1">
+                                Source Factsheet
+                                <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+                            </a>
+                        </div>
+                        <div class="space-y-5 text-on-surface/90 leading-relaxed">
+                            <p class="font-body-md">${escapeHtml(data.answer)}</p>
+                        </div>
+                        <div class="mt-8 pt-5 border-t border-white/5 flex justify-between items-center">
+                            <span class="font-label-sm text-label-sm text-on-surface-variant/60 tracking-wider">LAST UPDATED: ${escapeHtml(data.last_updated)}</span>
+                            <div class="flex gap-3">
+                                <button class="w-9 h-9 flex items-center justify-center hover:bg-white/5 rounded-full transition-colors text-on-surface-variant hover:text-primary">
+                                    <span class="material-symbols-outlined text-[20px]">thumb_up</span>
+                                </button>
+                                <button class="w-9 h-9 flex items-center justify-center hover:bg-white/5 rounded-full transition-colors text-on-surface-variant hover:text-primary">
+                                    <span class="material-symbols-outlined text-[20px]">share</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }
+
+            chatFeed.insertAdjacentHTML('beforeend', botMsgHtml);
+            chatFeed.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+        } catch (error) {
+            console.error("Chat error:", error);
+            // Hide Loader
+            thinkingState.classList.add('hidden');
+
+            // Show connection error bubble
+            const errorHtml = `
+            <div class="flex flex-col items-start w-full animate-in fade-in duration-500">
+                <div class="glass-card border-error/20 p-6 rounded-[28px] rounded-tl-none w-full bg-error-container/10">
+                    <p class="text-error font-body-md">Connection failed: Could not communicate with assistant. Please ensure backend is running.</p>
+                </div>
+            </div>`;
+            chatFeed.insertAdjacentHTML('beforeend', errorHtml);
+            chatFeed.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }
+    }
+</script>
+</body>
+</html>
