@@ -1,5 +1,5 @@
 {
-  "last_indexed_at": "2026-06-30",
+  "last_indexed_at": "2026-07-01",
   "collection_name": "hdfc_faq_collection",
   "model_name": "BAAI/bge-small-en-v1.5",
   "schemes": {
@@ -19,10 +19,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b9225.32",
+      "nav": "\u20b9226.77",
       "aum": "\u20b997,350.48Cr",
       "category": "Equity \u2014 Mid Cap",
-      "last_updated": "2026-06-30"
+      "last_updated": "2026-07-01"
     },
     "hdfc-large-cap-fund-direct-growth": {
       "id": "hdfc-large-cap-fund-direct-growth",
@@ -40,10 +40,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b91,210.96",
+      "nav": "\u20b91,211.25",
       "aum": "\u20b937,808.31Cr",
       "category": "Equity \u2014 Large Cap",
-      "last_updated": "2026-06-30"
+      "last_updated": "2026-07-01"
     },
     "hdfc-small-cap-fund-direct-growth": {
       "id": "hdfc-small-cap-fund-direct-growth",
@@ -61,10 +61,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b9156.76",
+      "nav": "\u20b9156.83",
       "aum": "\u20b938,809.48Cr",
       "category": "Equity \u2014 Small Cap",
-      "last_updated": "2026-06-30"
+      "last_updated": "2026-07-01"
     },
     "hdfc-gold-etf-fund-of-fund-direct-plan-growth": {
       "id": "hdfc-gold-etf-fund-of-fund-direct-plan-growth",
@@ -82,10 +82,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b943.93",
+      "nav": "\u20b943.72",
       "aum": "\u20b912,121.18Cr",
       "category": "Other \u2014 Gold ETF FoF",
-      "last_updated": "2026-06-30"
+      "last_updated": "2026-07-01"
     },
     "hdfc-defence-fund-direct-growth": {
       "id": "hdfc-defence-fund-direct-growth",
@@ -103,10 +103,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b930.23",
+      "nav": "\u20b930.50",
       "aum": "\u20b99,724.27Cr",
       "category": "Equity \u2014 Sectoral/Thematic (Defence)",
-      "last_updated": "2026-06-30"
+      "last_updated": "2026-07-01"
     }
   }
 }
