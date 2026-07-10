@@ -1,5 +1,5 @@
 {
-  "last_indexed_at": "2026-07-09",
+  "last_indexed_at": "2026-07-10",
   "collection_name": "hdfc_faq_collection",
   "model_name": "BAAI/bge-small-en-v1.5",
   "schemes": {
@@ -19,10 +19,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b9226.56",
-      "aum": "\u20b997,350.48Cr",
+      "nav": "\u20b9228.93",
+      "aum": "\u20b91,00,858.31Cr",
       "category": "Equity \u2014 Mid Cap",
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-10"
     },
     "hdfc-large-cap-fund-direct-growth": {
       "id": "hdfc-large-cap-fund-direct-growth",
@@ -40,10 +40,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b91,218.47",
-      "aum": "\u20b937,808.31Cr",
+      "nav": "\u20b91,227.57",
+      "aum": "\u20b939,023.69Cr",
       "category": "Equity \u2014 Large Cap",
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-10"
     },
     "hdfc-small-cap-fund-direct-growth": {
       "id": "hdfc-small-cap-fund-direct-growth",
@@ -61,10 +61,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b9155.39",
-      "aum": "\u20b938,809.48Cr",
+      "nav": "\u20b9157.55",
+      "aum": "\u20b940,416.80Cr",
       "category": "Equity \u2014 Small Cap",
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-10"
     },
     "hdfc-gold-etf-fund-of-fund-direct-plan-growth": {
       "id": "hdfc-gold-etf-fund-of-fund-direct-plan-growth",
@@ -82,10 +82,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b944.16",
-      "aum": "\u20b912,121.18Cr",
+      "nav": "\u20b944.63",
+      "aum": "\u20b911,019.45Cr",
       "category": "Other \u2014 Gold ETF FoF",
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-10"
     },
     "hdfc-defence-fund-direct-growth": {
       "id": "hdfc-defence-fund-direct-growth",
@@ -103,10 +103,10 @@
           "background": "N/A"
         }
       ],
-      "nav": "\u20b929.98",
-      "aum": "\u20b99,724.27Cr",
+      "nav": "\u20b930.08",
+      "aum": "\u20b910,529.25Cr",
       "category": "Equity \u2014 Sectoral/Thematic (Defence)",
-      "last_updated": "2026-07-09"
+      "last_updated": "2026-07-10"
     }
   }
 }
