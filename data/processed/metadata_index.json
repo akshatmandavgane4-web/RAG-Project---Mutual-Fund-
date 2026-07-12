@@ -1,5 +1,5 @@
 {
-  "last_indexed_at": "2026-07-11",
+  "last_indexed_at": "2026-07-12",
   "collection_name": "hdfc_faq_collection",
   "model_name": "BAAI/bge-small-en-v1.5",
   "schemes": {
@@ -22,7 +22,7 @@
       "nav": "\u20b9231.97",
       "aum": "\u20b91,00,858.31Cr",
       "category": "Equity \u2014 Mid Cap",
-      "last_updated": "2026-07-11"
+      "last_updated": "2026-07-12"
     },
     "hdfc-large-cap-fund-direct-growth": {
       "id": "hdfc-large-cap-fund-direct-growth",
@@ -43,7 +43,7 @@
       "nav": "\u20b91,236.78",
       "aum": "\u20b939,023.69Cr",
       "category": "Equity \u2014 Large Cap",
-      "last_updated": "2026-07-11"
+      "last_updated": "2026-07-12"
     },
     "hdfc-small-cap-fund-direct-growth": {
       "id": "hdfc-small-cap-fund-direct-growth",
@@ -64,7 +64,7 @@
       "nav": "\u20b9160.27",
       "aum": "\u20b940,416.80Cr",
       "category": "Equity \u2014 Small Cap",
-      "last_updated": "2026-07-11"
+      "last_updated": "2026-07-12"
     },
     "hdfc-gold-etf-fund-of-fund-direct-plan-growth": {
       "id": "hdfc-gold-etf-fund-of-fund-direct-plan-growth",
@@ -85,7 +85,7 @@
       "nav": "\u20b944.56",
       "aum": "\u20b911,019.45Cr",
       "category": "Other \u2014 Gold ETF FoF",
-      "last_updated": "2026-07-11"
+      "last_updated": "2026-07-12"
     },
     "hdfc-defence-fund-direct-growth": {
       "id": "hdfc-defence-fund-direct-growth",
@@ -106,7 +106,7 @@
       "nav": "\u20b930.48",
       "aum": "\u20b910,529.25Cr",
       "category": "Equity \u2014 Sectoral/Thematic (Defence)",
-      "last_updated": "2026-07-11"
+      "last_updated": "2026-07-12"
     }
   }
 }
